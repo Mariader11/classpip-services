@@ -21,7 +21,7 @@ Make sure you have NodeJS installed. Download the installer [here](https://nodej
 You have to install [LoopBack](http://loopback.io) tooling for managing the model:
 
 ```script
-npm install -g strongloop
+npm install -g strongloop@6.0.3
 ```
 
 ## Local Dependencies

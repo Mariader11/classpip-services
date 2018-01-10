@@ -1,7 +1,13 @@
 {
   "db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "mdmdatabase",
+    "password": "1994",
     "name": "db",
-    "connector": "memory"
+    "user": "mariader",
+    "connector": "mysql"
   },
   "emailDs": {
     "name": "emailDs",

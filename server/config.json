@@ -20,6 +20,5 @@
     "cors": false,
     "handleErrors": false
   },
-  "legacyExplorer": false,
-  "logoutSessionsOnSensitiveChanges": true
+  "legacyExplorer": false
 }

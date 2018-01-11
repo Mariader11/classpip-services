@@ -33,9 +33,19 @@
       "type": "belongsTo",
       "model": "Avatar",
       "foreignKey": "avatarId"
+    },
+    "competitions": {
+      "type": "hasMany",
+      "model": "Competition",
+      "foreignKey": "teacherId",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",

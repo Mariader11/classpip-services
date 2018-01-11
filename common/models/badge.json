@@ -29,7 +29,8 @@
       "foreignKey": "badgeId"
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",

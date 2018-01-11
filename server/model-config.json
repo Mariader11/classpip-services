@@ -65,5 +65,9 @@
   "Badge": {
     "dataSource": "db",
     "public": true
+  },
+  "Competition": {
+    "dataSource": "db",
+    "public": true
   }
 }

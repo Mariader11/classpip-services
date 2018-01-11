@@ -76,7 +76,8 @@
       "foreignKey": "schoolId"
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",

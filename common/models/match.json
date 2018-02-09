@@ -1,0 +1,28 @@
+{
+  "name": "match",
+  "plural": "matches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "player1": {
+      "type": "number",
+      "required": true
+    },
+    "player2": {
+      "type": "number",
+      "required": true
+    },
+    "winner": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

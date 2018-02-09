@@ -69,5 +69,17 @@
   "Competition": {
     "dataSource": "db",
     "public": true
+  },
+  "journey": {
+    "dataSource": "db",
+    "public": true
+  },
+  "match": {
+    "dataSource": "db",
+    "public": true
+  },
+  "team": {
+    "dataSource": "db",
+    "public": true
   }
 }

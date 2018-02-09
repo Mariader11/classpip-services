@@ -22,7 +22,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "journey": {
+      "type": "belongsTo",
+      "model": "journey",
+      "foreignKey": "journeyId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

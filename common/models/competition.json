@@ -37,10 +37,12 @@
     "teacher": {
       "type": "belongsTo",
       "model": "Teacher",
-      "foreignKey": "teacherId",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "teacherId"
+    },
+    "journeys": {
+      "type": "hasMany",
+      "model": "journey",
+      "foreignKey": "competitionId"
     }
   },
   "acls": [],

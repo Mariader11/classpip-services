@@ -37,11 +37,12 @@
     "competitions": {
       "type": "hasMany",
       "model": "Competition",
-      "foreignKey": "teacherId",
-      "options": {
-        "nestRemoting": true,
-        "disableInclude": true
-      }
+      "foreignKey": "teacherId"
+    },
+    "teams": {
+      "type": "hasMany",
+      "model": "team",
+      "foreignKey": "teacherId"
     }
   },
   "acls": [

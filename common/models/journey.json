@@ -17,7 +17,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "competition": {
+      "type": "belongsTo",
+      "model": "Competition",
+      "foreignKey": "competitionId"
+    },
+    "matches": {
+      "type": "hasMany",
+      "model": "match",
+      "foreignKey": "journeyId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

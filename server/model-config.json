@@ -70,15 +70,15 @@
     "dataSource": "db",
     "public": true
   },
-  "journey": {
+  "Journey": {
     "dataSource": "db",
     "public": true
   },
-  "match": {
+  "Match": {
     "dataSource": "db",
     "public": true
   },
-  "team": {
+  "Team": {
     "dataSource": "db",
     "public": true
   }

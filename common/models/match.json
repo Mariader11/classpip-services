@@ -1,5 +1,5 @@
 {
-  "name": "match",
+  "name": "Match",
   "plural": "matches",
   "base": "PersistedModel",
   "idInjection": true,

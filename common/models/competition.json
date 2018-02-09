@@ -41,8 +41,18 @@
     },
     "journeys": {
       "type": "hasMany",
-      "model": "journey",
+      "model": "Journey",
       "foreignKey": "competitionId"
+    },
+    "students": {
+      "type": "hasAndBelongsToMany",
+      "model": "Student",
+      "foreignKey": "studentId"
+    },
+    "teams": {
+      "type": "hasAndBelongsToMany",
+      "model": "Team",
+      "foreignKey": "teamId"
     }
   },
   "acls": [],

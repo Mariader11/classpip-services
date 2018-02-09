@@ -37,6 +37,16 @@
       "type": "hasAndBelongsToMany",
       "model": "Badge",
       "foreignKey": "studentId"
+    },
+    "competitions": {
+      "type": "hasAndBelongsToMany",
+      "model": "Competition",
+      "foreignKey": "competitionId"
+    },
+    "teams": {
+      "type": "hasAndBelongsToMany",
+      "model": "Team",
+      "foreignKey": "teamId"
     }
   },
   "acls": [

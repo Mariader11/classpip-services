@@ -3,7 +3,7 @@
     "host": "localhost",
     "port": 3306,
     "url": "",
-    "database": "mdmdatabase",
+    "database": "database-mdm",
     "password": "1994",
     "name": "db",
     "user": "mariader",

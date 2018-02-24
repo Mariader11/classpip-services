@@ -228,8 +228,44 @@ module.exports = function (app, cb) {
                                                 if (err) throw err;
                                                 groups[3].students.add(students[3], function (err) {
                                                   if (err) throw err;
-                                                  process.nextTick(cb);
-                                                })
+
+                                                  app.models.Competition.create([{
+                                                    type:'Liga',
+                                                    mode:'Individual',
+                                                    name:'Bastetanos',
+                                                    numParticipants: 13,
+                                                    numJourneys: 12,
+                                                    information: 'Bases de la liga'
+                                                  }, {
+                                                    type:'Tenis',
+                                                    mode:'Equipos',
+                                                    name:'Los jeje',
+                                                    numParticipants: 13,
+                                                    numJourneys: 12,
+                                                    information: 'Bases del torneo'
+                                                  }], function (err, competitions) {
+                                                    if (err) throw err;
+
+                                                    competitions[0].students.add(students[7], function (err) {
+                                                      if (err) throw err;
+                                                      competitions[0].students.add(students[8], function (err) {
+                                                        if (err) throw err;
+                                                        competitions[0].students.add(students[9], function (err) {
+                                                          if (err) throw err;
+                                                          competitions[0].students.add(students[10], function (err) {
+                                                            if (err) throw err;
+                                                            competitions[0].students.add(students[11], function (err) {
+                                                              if (err) throw err;
+                                                              competitions[0].students.add(students[12], function (err) {
+                                                                if (err) throw err;
+                                                                 process.nextTick(cb);
+                                                              })
+                                                            })
+                                                          })
+                                                        })
+                                                      })
+                                                    })
+                                                });
                                               })
                                             })
                                           })
@@ -251,11 +287,12 @@ module.exports = function (app, cb) {
                   })
                 })
               })
-            });
-          })
+            })
+          });
         })
       })
     })
-  });
+  })
+});
 });
 };

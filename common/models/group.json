@@ -23,6 +23,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Student",
       "foreignKey": "studentId"
+    },
+    "competitions": {
+      "type": "hasMany",
+      "model": "Competition",
+      "foreignKey": "groupId"
     }
   },
   "acls": [

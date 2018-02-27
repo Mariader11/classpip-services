@@ -29,7 +29,7 @@
     },
     "information": {
       "type": "string",
-      "required": true
+      "required": false
     }
   },
   "validations": [],
@@ -53,9 +53,15 @@
       "type": "hasAndBelongsToMany",
       "model": "Team",
       "foreignKey": "teamId"
+    },
+    "group": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": "groupId"
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",

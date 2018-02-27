@@ -235,14 +235,16 @@ module.exports = function (app, cb) {
                                                     name:'Bastetanos',
                                                     numParticipants: 13,
                                                     numJourneys: 12,
-                                                    information: 'Bases de la liga'
+                                                    information: 'Bases de la liga',
+                                                    teacherId: 1000
                                                   }, {
                                                     type:'Tenis',
                                                     mode:'Equipos',
                                                     name:'Los jeje',
                                                     numParticipants: 13,
                                                     numJourneys: 12,
-                                                    information: 'Bases del torneo'
+                                                    information: 'Bases del torneo',
+                                                    teacherId: 1000
                                                   }], function (err, competitions) {
                                                     if (err) throw err;
 

@@ -10,11 +10,6 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "numPlayers": {
-      "type": "number",
-      "required": true,
-      "default": 0
     }
   },
   "validations": [],
@@ -33,6 +28,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Student",
       "foreignKey": "studentId"
+    },
+    "group": {
+      "type": "belongsTo",
+      "model": "Group",
+      "foreignKey": "groupId"
     }
   },
   "acls": [
@@ -51,7 +51,7 @@
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],

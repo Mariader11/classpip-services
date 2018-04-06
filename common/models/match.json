@@ -7,17 +7,17 @@
     "validateUpsert": true
   },
   "properties": {
-    "player1": {
+    "playerOne": {
       "type": "number",
       "required": true
     },
-    "player2": {
+    "playerTwo": {
       "type": "number",
       "required": true
     },
     "winner": {
       "type": "number",
-      "required": true,
+      "required": false,
       "default": 0
     }
   },
@@ -45,7 +45,7 @@
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],

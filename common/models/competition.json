@@ -19,10 +19,6 @@
       "type": "string",
       "required": true
     },
-    "numParticipants": {
-      "type": "number",
-      "required": true
-    },
     "numJourneys": {
       "type": "number",
       "required": true

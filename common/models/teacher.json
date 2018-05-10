@@ -33,16 +33,6 @@
       "type": "belongsTo",
       "model": "Avatar",
       "foreignKey": "avatarId"
-    },
-    "competitions": {
-      "type": "hasMany",
-      "model": "Competition",
-      "foreignKey": "teacherId"
-    },
-    "teams": {
-      "type": "hasMany",
-      "model": "Team",
-      "foreignKey": "teacherId"
     }
   },
   "acls": [

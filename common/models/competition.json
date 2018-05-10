@@ -30,11 +30,6 @@
   },
   "validations": [],
   "relations": {
-    "teacher": {
-      "type": "belongsTo",
-      "model": "Teacher",
-      "foreignKey": "teacherId"
-    },
     "journeys": {
       "type": "hasMany",
       "model": "Journey",

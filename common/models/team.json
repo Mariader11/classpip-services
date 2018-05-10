@@ -14,11 +14,6 @@
   },
   "validations": [],
   "relations": {
-    "teacher": {
-      "type": "belongsTo",
-      "model": "Teacher",
-      "foreignKey": "teacherId"
-    },
     "competitions": {
       "type": "hasAndBelongsToMany",
       "model": "Competition",
